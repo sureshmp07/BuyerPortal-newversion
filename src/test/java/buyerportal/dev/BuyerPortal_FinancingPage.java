@@ -1,6 +1,7 @@
 package buyerportal.dev;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -47,7 +48,7 @@ public class BuyerPortal_FinancingPage {
 		}
 	
 
-	public void financePage1(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8,String s9) throws InterruptedException
+	public void financePage1(String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8,String s9) throws InterruptedException, IOException
 	{   
 		reusable.click(financelogo);
 		reusable.click(getfinance);
@@ -70,7 +71,7 @@ public class BuyerPortal_FinancingPage {
 		reusable.insertText(counter_city,s9);
 		reusable.click(next);		
 	}
-	public void financePage2(String filepath,String s1,String s2) throws InterruptedException, AWTException
+	public void financePage2(String filepath,String s1,String s2) throws InterruptedException, AWTException, IOException
 	{   
 		reusable.actions(tradedocument);
 		

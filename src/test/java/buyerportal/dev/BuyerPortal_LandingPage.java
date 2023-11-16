@@ -83,14 +83,14 @@ public class BuyerPortal_LandingPage {
 		}
 	
 
-	public void landingpage(String name1) throws InterruptedException
+	public void landingpage(String name1) throws InterruptedException, IOException
 	{   
 		
 		reusable.insertText(searchbox, name1);
 		reusable.click(searchclick);
 		reusable.navigate(driver);
 	}
-		public void landingpage1() throws InterruptedException 
+		public void landingpage1() throws InterruptedException, IOException 
 		{		
 		reusable.click(foodclick);
 		reusable.scrollDown(driver);
@@ -103,7 +103,7 @@ public class BuyerPortal_LandingPage {
 		reusable.navigate(driver);
 		}
 		
-		public void landingpage2() throws InterruptedException 
+		public void landingpage2() throws InterruptedException, IOException 
 		{
 			
 		reusable.click(categoriesright);
@@ -125,7 +125,7 @@ public class BuyerPortal_LandingPage {
 		reusable.navigate(driver);
 		}
 		
-		public void testimonials1() throws InterruptedException
+		public void testimonials1() throws InterruptedException, IOException
 		{
 			
 			reusable.click(testimonialsleft);

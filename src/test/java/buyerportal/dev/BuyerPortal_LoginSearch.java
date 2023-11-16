@@ -1,5 +1,7 @@
 package buyerportal.dev;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -23,13 +25,13 @@ public class BuyerPortal_LoginSearch {
 		}
 	
 
-	public void loginsearch(String buyersearch) throws InterruptedException
+	public void loginsearch(String buyersearch) throws InterruptedException, IOException
 	{
 	reusable.insertText(search, buyersearch);
 	reusable.clickOn(searchclick);	
 	reusable.click(tableclick);
 }
-	public void loginsearch1(String buyersearch) throws InterruptedException
+	public void loginsearch1(String buyersearch) throws InterruptedException, IOException
 	{
 	reusable.click(popular);	
 	reusable.insertText(search, buyersearch);

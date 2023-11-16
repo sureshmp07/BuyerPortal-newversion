@@ -175,7 +175,7 @@ public class BuyerPortal_BusinessOnboardingPage {
 		reusable.assertion(assert_OtherInformation, text3);
 		
 	}
-	public void OtherInformationPage(String text1,String text2,String text3,String text4) throws InterruptedException, AWTException
+	public void OtherInformationPage(String text1,String text2,String text3,String text4) throws InterruptedException, AWTException, IOException
 	{
 		reusable.click(nextbutton);
 		reusable.click(awardbutton);

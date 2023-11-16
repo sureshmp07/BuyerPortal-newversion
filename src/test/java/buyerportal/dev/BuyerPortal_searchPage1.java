@@ -62,7 +62,7 @@ public class BuyerPortal_searchPage1 {
 		}
 	
 
-	public void searchpage2(String name1,String name2,String s2,String s3,String path,String p1,int v1,int v2) throws InterruptedException
+	public void searchpage2(String name1,String name2,String s2,String s3,String path,String p1,int v1,int v2) throws InterruptedException, IOException
 	{   
 		reusable.click(foodclick);
 		

@@ -45,7 +45,7 @@ public class BuyerPortal_SignInPage {
    
 }
 	
-	public void signIn1(String name1,String name2,String name3) throws InterruptedException
+	public void signIn1(String name1,String name2,String name3) throws InterruptedException, IOException
 	{
 		
    

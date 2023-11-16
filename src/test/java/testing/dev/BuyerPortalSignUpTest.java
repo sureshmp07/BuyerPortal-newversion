@@ -24,7 +24,7 @@ public class BuyerPortalSignUpTest  extends BaseTest {
 	}
 	
 	@Test	(enabled=false)
-	public void signUpPageTest2() throws InterruptedException 
+	public void signUpPageTest2() throws InterruptedException, IOException 
 	{
 		
 		signup.googlesignUp(properties.getProperty("google_email"),properties.getProperty("google_pass"));

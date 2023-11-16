@@ -1,5 +1,7 @@
 package buyerportal.dev;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -34,7 +36,7 @@ public class BuyerPortal_LogisticsPage {
 		}
 	
 
-	public void logisticsPage(String s1,String s2,String s3,String s4,String s5,String s6,String s7) throws InterruptedException
+	public void logisticsPage(String s1,String s2,String s3,String s4,String s5,String s6,String s7) throws InterruptedException, IOException
 	{
 	reusable.click(logisticsicon);
 	reusable.click(continueclick);

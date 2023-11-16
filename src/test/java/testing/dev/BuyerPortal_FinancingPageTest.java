@@ -23,14 +23,14 @@ public class BuyerPortal_FinancingPageTest extends BaseTest {
 	}
 	
    @Test(priority=2)
-	public void financingpage_basicbusiness() throws InterruptedException
+	public void financingpage_basicbusiness() throws InterruptedException, IOException
 	{
 	   financepage.financePage1(properties.getProperty("detailsname"),properties.getProperty("taxid"), properties.getProperty("registrationaddress"), properties.getProperty("detailsstate"), properties.getProperty("detailscity"), properties.getProperty("countername"), properties.getProperty("countertaxid"), properties.getProperty("counterregistrationaddress"),properties.getProperty("countercity"));
 		
 	}
    
    @Test(priority=3)
-	public void financingpage_TradeDocuments() throws InterruptedException, AWTException
+	public void financingpage_TradeDocuments() throws InterruptedException, AWTException, IOException
 	{
 	   financepage.financePage2(properties.getProperty("filepath"),properties.getProperty("tradeamount"),properties.getProperty("amounttofinance"));
 		

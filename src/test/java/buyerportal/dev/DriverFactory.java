@@ -56,12 +56,16 @@ public class DriverFactory {
 		    
 		  case"EDGE":
 			  
-			//EdgeOptions options = new EdgeOptions();
-		    //options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true); // Optional capability
-		    //options.setCapability("ms:edgeOptions", "--headless");
+//			EdgeOptions options1 = new EdgeOptions();
+//		    options1.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true); // Optional capability
+//		    options1.setCapability("ms:edgeOptions", "--headless");
 			  
-			WebDriverManager.edgedriver().setup();
-			driver=new EdgeDriver();
+			//WebDriverManager.edgedriver().setup();
+
+			  EdgeOptions options1=new EdgeOptions();
+			  options1.setHeadless(true);
+
+			driver=new EdgeDriver(options1);
 			break;
 			
 		  case"FF":

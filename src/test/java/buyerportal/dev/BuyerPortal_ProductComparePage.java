@@ -1,5 +1,7 @@
 package buyerportal.dev;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -33,7 +35,7 @@ public class BuyerPortal_ProductComparePage {
 		}
 	
 
-	public void comparePage() throws InterruptedException
+	public void comparePage() throws InterruptedException, IOException
 	{   
 		
 		
@@ -53,7 +55,7 @@ public class BuyerPortal_ProductComparePage {
 		reusable.click(compareclick);
 		Thread.sleep(3000);	
 }
-	public void comparePage1() throws InterruptedException
+	public void comparePage1() throws InterruptedException, IOException
 	{
 		
 		Thread.sleep(3000);

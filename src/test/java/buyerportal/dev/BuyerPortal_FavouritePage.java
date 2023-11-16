@@ -1,5 +1,7 @@
 package buyerportal.dev;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -19,7 +21,7 @@ public class BuyerPortal_FavouritePage {
 		}
 	
 
-	public void favPage() throws InterruptedException
+	public void favPage() throws InterruptedException, IOException
 	{   
 		
 		reusable.selectCheckboxes(favoriteicon);

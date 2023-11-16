@@ -36,7 +36,7 @@ public class BuyerPortal_BusinessOnboardingPageTest extends BaseTest{
 	}
 	
 	@Test	(priority=5)
-	public void otherInformation() throws InterruptedException, AWTException
+	public void otherInformation() throws InterruptedException, AWTException, IOException
 	
 	{
 		businessPage.OtherInformationPage(properties.getProperty("other_awardnm"),properties.getProperty("other_news"),properties.getProperty("assert_finish"),properties.getProperty("assert_staff"));

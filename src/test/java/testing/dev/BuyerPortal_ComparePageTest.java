@@ -21,14 +21,14 @@ import org.testng.annotations.Test;
 	}
 	
    @Test(priority=2)
-	public void comparePage01() throws InterruptedException
+	public void comparePage01() throws InterruptedException, IOException
 	{
 		ProductComparePage.comparePage();
 		
 	}
    
 	@Test	(priority=3)
-	public void contactSupplier1() throws InterruptedException
+	public void contactSupplier1() throws InterruptedException, IOException
 	
 	{
 		
@@ -36,7 +36,7 @@ import org.testng.annotations.Test;
     	
 	}
 	@Test	(priority=4)
-	public void requestQuote() throws InterruptedException
+	public void requestQuote() throws InterruptedException, IOException
 	
 	{
 		

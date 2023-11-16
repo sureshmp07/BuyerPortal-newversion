@@ -122,7 +122,7 @@ public class BuyerPortal_SignUp {
 	reusable.click(logout);
     }
 	
-	public void googlesignUp(String mail,String pass) throws InterruptedException
+	public void googlesignUp(String mail,String pass) throws InterruptedException, IOException
 	{
 	reusable.click(joinus);
 	reusable.click(googlelogin);

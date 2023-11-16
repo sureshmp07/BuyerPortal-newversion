@@ -22,7 +22,7 @@ public class BuyerPortal_LogisticsPageTest extends BaseTest{
 	}
 	
 	@Test	(priority=2)
-	public void logisticspage() throws InterruptedException 
+	public void logisticspage() throws InterruptedException, IOException 
 	{
 		logisticsPage.logisticsPage(properties.getProperty("origincompany"),properties.getProperty("destinationcompany"),properties.getProperty("width"),properties.getProperty("length"),properties.getProperty("height"),properties.getProperty("weight"),properties.getProperty("shipmentdate"));
       

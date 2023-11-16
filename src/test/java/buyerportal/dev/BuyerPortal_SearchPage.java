@@ -1,5 +1,7 @@
 package buyerportal.dev;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -22,7 +24,7 @@ public class BuyerPortal_SearchPage {
 		}
 	
 
-	public void search(String name) throws InterruptedException
+	public void search(String name) throws InterruptedException, IOException
 	{
 	reusable.click(profileicon);
 	reusable.click(logout);

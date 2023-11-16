@@ -10,7 +10,7 @@ public class BuyerPortal_LandingPagetest extends BaseTest {
 	
 	
 	@Test(priority=1)
-public void search() throws InterruptedException
+public void search() throws InterruptedException, IOException
 	
 	{
 		
@@ -19,21 +19,21 @@ public void search() throws InterruptedException
 	}
 	@Test(priority=2)
 	
-	public void popularSearch() throws InterruptedException
+	public void popularSearch() throws InterruptedException, IOException
 	
 	{
 		landinpage.landingpage1();
 
 }
 	@Test(priority=3)
-	public void categories() throws InterruptedException
+	public void categories() throws InterruptedException, IOException
 	
 	{
 		landinpage.landingpage2();
 }
 	
 	@Test(priority=4)
-	public void testimonials() throws InterruptedException
+	public void testimonials() throws InterruptedException, IOException
 	
 	{
 		landinpage.testimonials1();

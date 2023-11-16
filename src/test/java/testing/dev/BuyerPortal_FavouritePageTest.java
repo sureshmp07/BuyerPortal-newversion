@@ -25,7 +25,7 @@ public class BuyerPortal_FavouritePageTest extends BaseTest{
 	}
 
 	@Test	(priority=2)
-	public void loginsearchPageTest() throws InterruptedException
+	public void loginsearchPageTest() throws InterruptedException, IOException
 	
 	{
 	
@@ -34,7 +34,7 @@ public class BuyerPortal_FavouritePageTest extends BaseTest{
 	
 	}
 	@Test	(priority=3)
-public void favPage1() throws InterruptedException
+public void favPage1() throws InterruptedException, IOException
 	
 	{
 	

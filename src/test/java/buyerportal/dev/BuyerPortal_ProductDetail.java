@@ -1,5 +1,7 @@
 package buyerportal.dev;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -41,7 +43,7 @@ public class BuyerPortal_ProductDetail {
 //    reusable.assertion(assertcontactsupplier, name2);
 //    reusable.click(close);
 //}
-	public void contact_business(String name1,String name2,String name3,String name4) throws InterruptedException
+	public void contact_business(String name1,String name2,String name3,String name4) throws InterruptedException, IOException
 	{
 	reusable.click(contactsupplier);
 	reusable.insertText(company_legalnm, name1);

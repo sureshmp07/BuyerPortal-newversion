@@ -171,7 +171,7 @@ public static  File file;
 	   
 	}
 	//click by  javascript
-		public boolean click(By locator) throws InterruptedException 
+		public boolean click(By locator) throws InterruptedException, IOException 
 		{
 		
 	    Thread.sleep(3000);
@@ -196,6 +196,7 @@ public static  File file;
 		} catch (Exception e) {
 					// TODO Auto-generated catch block
 		childtest.log(Status.INFO,"element not found ,unable to click on");
+		childtest.addScreenCaptureFromPath(ReusableFunction.captureScreenShot(driver));
 		System.out.println("element not found ,unable to click on");
 		}
 		attempts++;
@@ -497,7 +498,7 @@ public static void uploadFileAutoit(String filepath) {
 		
 	}
 //upload file using sendkeys 
-public  void uploadSendkeyss(By locator,String text)
+public  void uploadSendkeyss(By locator,String text) throws IOException
 {
 
 try {
@@ -514,6 +515,7 @@ try {
 	e.printStackTrace();
 	System.out.println("unable to perform sendkeys on : "+text);
 	childtest.log(Status.INFO,"unable to perform sendkeys on "+text);
+	childtest.addScreenCaptureFromPath(ReusableFunction.captureScreenShot(driver));
 }}
 //upload file using robot class
 public  void uploadrobot(String text) throws InterruptedException, AWTException

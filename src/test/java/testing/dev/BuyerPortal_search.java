@@ -24,7 +24,7 @@ public class BuyerPortal_search extends BaseTest{
 	}
 
 	@Test	(priority=2)
-	public void loginsearchPageTest() throws InterruptedException
+	public void loginsearchPageTest() throws InterruptedException, IOException
 	
 	{
 	

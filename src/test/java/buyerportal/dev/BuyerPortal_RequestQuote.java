@@ -1,5 +1,7 @@
 package buyerportal.dev;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -33,7 +35,7 @@ public class BuyerPortal_RequestQuote {
 	
 	
 	
-	public void requestQuote(String quantiti,String destinatio,String date1,String requiremnt) throws InterruptedException
+	public void requestQuote(String quantiti,String destinatio,String date1,String requiremnt) throws InterruptedException, IOException
 	{
 	reusable.click(requestquote);
 	//reusable.insertText(companyname, companynam);
