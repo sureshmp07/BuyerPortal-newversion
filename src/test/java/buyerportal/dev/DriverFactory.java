@@ -46,7 +46,7 @@ public class DriverFactory {
 //			options. addArguments("--allow-running-insecure-content");
 		
 			//options.addArguments("--headless=new", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
-		//	WebDriverManager.chromedriver().setup(); 
+		WebDriverManager.chromedriver().setup(); 
 			
 		  ChromeOptions options = new ChromeOptions();
 			  options.addArguments("--headless=new","--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
@@ -60,8 +60,8 @@ public class DriverFactory {
 //		    options1.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true); // Optional capability
 //		    options1.setCapability("ms:edgeOptions", "--headless");
 			  
-			//WebDriverManager.edgedriver().setup();
-
+			WebDriverManager.edgedriver().setup();
+			
 			  EdgeOptions options1=new EdgeOptions();
 			  options1.setHeadless(true);
 
