@@ -42,6 +42,7 @@ public class BuyerPortal_BusinessOnboardingPage {
 //	private By entityname=By.xpath("//input[@id=\"corporate_name\"]");
 //	private By countryofincorporation=By.xpath("//input[@id=\"country_of_incorporation\"]");
 	private By CountryofOperation=By.xpath("(//input[@role=\"combobox\"])[2]");
+	private By TIN=By.xpath("//input[@name=\"tax_id\"]");
 	private By UEN=By.xpath("//input[@name=\"registration_number\"]");
 	private By Entitytype=By.xpath("(//input[@role=\"combobox\"])[3]");
 	private By Registrationcheckbox=By.xpath("//span[text()='Registration Number same as Tax ID']");
@@ -120,8 +121,8 @@ public class BuyerPortal_BusinessOnboardingPage {
 		reusable.sendkeyss(code,s3);
 		reusable.arrowdown(code);
 		reusable.sendkeyss(phone,s4);
-		reusable.click(verify);
-		reusable.sendkeyss(otp,s5);
+		//reusable.click(verify);
+		//reusable.sendkeyss(otp,s5);
 		reusable.sendkeyss(company_legal,s6);
 		reusable.sendkeyss(country_incorp,s7);
 		reusable.arrowdown(country_incorp);
@@ -130,7 +131,7 @@ public class BuyerPortal_BusinessOnboardingPage {
 		reusable.click(next);
 		reusable.assertion(assert_businessprofile, s9);
 	}
-	public void basicBusinessDetailsPage(String filepath,String b1,String b2,String b3,String b4,String b5,String b6,String b7,String b8) throws InterruptedException, AWTException, IOException
+	public void basicBusinessDetailsPage(String filepath,String b1,String b2,String b3,String b4,String b5,String b6,String b7,String b8,String b9) throws InterruptedException, AWTException, IOException
 	{   
 		
 		
@@ -149,16 +150,17 @@ public class BuyerPortal_BusinessOnboardingPage {
 //		reusable.click(deletebutton);
 		reusable.sendkeyss(CountryofOperation,b1);		
 		reusable.arrowdown(CountryofOperation);
-		reusable.sendkeyss(UEN,b2);
-		reusable.sendkeyss(doi, b3);
-		reusable.sendkeyss(Entitytype,b4);		
+		reusable.sendkeyss(TIN,b2);
+		reusable.sendkeyss(UEN,b3);
+		reusable.sendkeyss(doi, b4);
+		reusable.sendkeyss(Entitytype,b5);		
 		reusable.arrowdown(Entitytype);
-		reusable.sendkeyss(companywebsite, b5);
-		reusable.sendkeyss(PrimaryIndustry,b6);
+		reusable.sendkeyss(companywebsite, b6);
+		reusable.sendkeyss(PrimaryIndustry,b7);
 		reusable.multipleArrowDown(PrimaryIndustry);
-		reusable.sendkeyss(companydescription,b7);
+		reusable.sendkeyss(companydescription,b8);
 		reusable.click(nextbutton);	
-		reusable.assertion(assert_ContactDetails,b8);
+		reusable.assertion(assert_ContactDetails,b9);
 	}
 	public void contactDetailsPage(String text1,String text2,String text3) throws InterruptedException, AWTException, IOException
 	{   
@@ -166,11 +168,11 @@ public class BuyerPortal_BusinessOnboardingPage {
 		reusable.sendkeyss(location,text1);
 	    reusable.arrowdown(location);
 		reusable.sendkeyss(city,text2);
-		reusable.click(backbutton);
+		//reusable.click(backbutton);
 //		reusable.click(nextbutton);
 //		reusable.arrowdown(phone);
 //		reusable.click(checkbox);
-		reusable.click(nextbutton1);
+		//reusable.click(nextbutton1);
 		reusable.click(nextbutton1);
 		reusable.assertion(assert_OtherInformation, text3);
 		

@@ -25,7 +25,7 @@ public class BuyerPortal_BusinessOnboardingPageTest extends BaseTest{
 	public void basicBusinessDetails1() throws InterruptedException, AWTException, IOException
 	
 	{
-		businessPage.basicBusinessDetailsPage(properties.getProperty("filepath"),properties.getProperty("countryofoperation"),properties.getProperty("tin"),properties.getProperty("doi"),properties.getProperty("entitytype"),properties.getProperty("companywebsite"),properties.getProperty("primary"),properties.getProperty("companydescription"),properties.getProperty("assert_ContactDetails"));
+		businessPage.basicBusinessDetailsPage(properties.getProperty("filepath"),properties.getProperty("countryofoperation"),properties.getProperty("tin"),properties.getProperty("tin"),properties.getProperty("doi"),properties.getProperty("entitytype"),properties.getProperty("companywebsite"),properties.getProperty("primary"),properties.getProperty("companydescription"),properties.getProperty("assert_ContactDetails"));
 
 	}
 	@Test	(priority=4)

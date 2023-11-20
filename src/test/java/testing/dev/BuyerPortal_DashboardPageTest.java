@@ -5,7 +5,8 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-public class BuyerPortal_DashboardPageTest extends BaseTest {
+puC:\Users\Dell\Downloads\less than 4mb pdf.pdf
+blic class BuyerPortal_DashboardPageTest extends BaseTest {
 	@Test	(priority=1)
 	public void signUpPageTest1() throws IOException, InterruptedException 
 	{
